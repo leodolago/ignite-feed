@@ -1,9 +1,7 @@
-import { Headder } from "./components/Header";
-import { Sidebar } from "./components/Sidebar";
-import { Post } from "./components/Post";
-
-import styles from './App.module.css';
-
+import { Header } from "./components/Header"
+import { Sidebar } from "./components/Sidebar"
+import { Post } from "./components/Post"
+import styles from './App.module.css'
 import './global.css';
 
 const posts = [
@@ -11,7 +9,7 @@ const posts = [
     id: 1,
     author: {
       avatarUrl: 'https://github.com/leodolago.png',
-      name: 'Leonardo do Lago',
+      name: 'Leonardo',
       role: 'CTO @Sitelegal'
     },
     content: [
@@ -24,8 +22,8 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl: 'https://github.com/maykbrito.png',
-      name: 'Mayk Brito',
+      avatarUrl: '../assets/fake-avatar/devon-lane.jpg',
+      name: 'Miguel',
       role: 'Educator @Sitelegal'
   },
     content: [
@@ -40,7 +38,7 @@ const posts = [
 function App() {
   return (
     <div>
-      <Headder />
+      <Header />
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
