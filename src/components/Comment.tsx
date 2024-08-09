@@ -1,6 +1,6 @@
 import { ThumbsUp, Trash } from 'phosphor-react';
 import styles from './Comment.module.css';
-import avatar from '../assets/fake-avatar/jane-cooper.jpg';
+import avatar from '../assets/avatar/jen-yue.png';
 import { Avatar } from './Avatar';
 import { useState } from 'react';
 
@@ -8,7 +8,6 @@ interface CommentProps {
   content: string,
   onDeleteComment: (comment: string) => void;
 }
-
 
 export function Comment({content, onDeleteComment } : CommentProps) {
   const [likeCount, setLikeCount] = useState(0);
